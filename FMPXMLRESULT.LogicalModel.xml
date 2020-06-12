@@ -21,7 +21,7 @@
     </element>
     <element id="FMPXMLRESULT.ERRORCODE">
       <path value="FMPXMLRESULT.ERRORCODE" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="string" />
@@ -30,7 +30,7 @@
     </element>
     <element id="FMPXMLRESULT.PRODUCT">
       <path value="FMPXMLRESULT.PRODUCT" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="BackboneElement" />
@@ -65,7 +65,7 @@
     </element>
     <element id="FMPXMLRESULT.DATABASE">
       <path value="FMPXMLRESULT.DATABASE" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="BackboneElement" />
@@ -118,7 +118,7 @@
     </element>
     <element id="FMPXMLRESULT.METADATA">
       <path value="FMPXMLRESULT.METADATA" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="BackboneElement" />
