@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
+   <ERRORCODE>0</ERRORCODE>
+   <PRODUCT BUILD="01-13-2015" NAME="FileMaker" VERSION="ProAdvanced 13.0v9" />
+   <DATABASE DATEFORMAT="D.m.yyyy" LAYOUT="" NAME="Molpatho_Leistungserfassung.fmp12" RECORDS="199975" TIMEFORMAT="k:mm:ss " />
+   <METADATA>
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Barcode_automatisch" TYPE="TEXT" />
+      <FIELD EMPTYOK="NO" MAXREPEAT="1" NAME="lf_Untersuchung_ID" TYPE="NUMBER" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Untersuchung" TYPE="TEXT" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="UN_GN" TYPE="NUMBER" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Zeitstempel" TYPE="DATE" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Zeitstempel_ Ergebnis" TYPE="DATE" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Ergebnis" TYPE="TEXT" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="ErgebnisInterpretation" TYPE="NUMBER" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="MolPatho_Ergebnis_ME::ME_Ergebnis_Zusatz" TYPE="TEXT" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="MolPatho_Ergebnis_ME::ME_Kommentar" TYPE="TEXT" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="MolPatho_Ergebnis_ME::ME_positive_Tumorzellen" TYPE="NUMBER" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="MolPatho_Ergebnis_ME::ME_Polysomie" TYPE="NUMBER" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="MolPatho_Ergebnis_ME::ME_gezaehlte_Zellen" TYPE="NUMBER" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="MolPatho_Ergebnis_ME::ME_Break_Apart" TYPE="NUMBER" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="MolPatho_Ergebnis_ME::ME_Extra_Gruen" TYPE="NUMBER" />
+      <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="MolPatho_Ergebnis_ME::ME_IHC" TYPE="TEXT" />
+   </METADATA>
+   <RESULTSET FOUND="2">
+      <ROW MODID="55" RECORDID="157894">
+         <COL>
+            <DATA>TE18.1</DATA>
+         </COL>
+         <COL>
+            <DATA>151519</DATA>
+         </COL>
+         <COL>
+            <DATA>ROS</DATA>
+         </COL>
+         <COL>
+            <DATA>1</DATA>
+         </COL>
+         <COL>
+            <DATA>17.01.2018</DATA>
+         </COL>
+         <COL>
+            <DATA>03.06.2020</DATA>
+         </COL>
+         <COL>
+            <DATA>Translokation; 27%, Polys. 7,4%, BA 12%, EG 3%, gez. Zellen 100 [Testergebis ROS-FISH]  (IHC fraglich)</DATA>
+         </COL>
+         <COL>
+            <DATA>1</DATA>
+         </COL>
+         <COL>
+            <DATA />
+         </COL>
+         <COL>
+            <DATA>Testergebis ROS-FISH</DATA>
+         </COL>
+         <COL>
+            <DATA>27</DATA>
+         </COL>
+         <COL>
+            <DATA>7,4</DATA>
+         </COL>
+         <COL>
+            <DATA>100</DATA>
+         </COL>
+         <COL>
+            <DATA>12</DATA>
+         </COL>
+         <COL>
+            <DATA>3</DATA>
+         </COL>
+         <COL>
+            <DATA>fraglich</DATA>
+         </COL>
+      </ROW>
+      <ROW MODID="9" RECORDID="204231">
+         <COL>
+            <DATA>TE20.1</DATA>
+         </COL>
+         <COL>
+            <DATA>197826</DATA>
+         </COL>
+         <COL>
+            <DATA>ROS</DATA>
+         </COL>
+         <COL>
+            <DATA>1</DATA>
+         </COL>
+         <COL>
+            <DATA>22.01.2020</DATA>
+         </COL>
+         <COL>
+            <DATA>03.06.2020</DATA>
+         </COL>
+         <COL>
+            <DATA>Storno; Patient verstorben [Testkommentar ROS-FISH Storno]</DATA>
+         </COL>
+         <COL>
+            <DATA>-2</DATA>
+         </COL>
+         <COL>
+            <DATA>Patient verstorben</DATA>
+         </COL>
+         <COL>
+            <DATA>Testkommentar ROS-FISH Storno</DATA>
+         </COL>
+         <COL>
+            <DATA />
+         </COL>
+         <COL>
+            <DATA />
+         </COL>
+         <COL>
+            <DATA />
+         </COL>
+         <COL>
+            <DATA />
+         </COL>
+         <COL>
+            <DATA />
+         </COL>
+         <COL>
+            <DATA />
+         </COL>
+      </ROW>
+   </RESULTSET>
+</FMPXMLRESULT>
