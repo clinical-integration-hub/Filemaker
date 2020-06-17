@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://hl7.org/fhir/StructureDefinitionFMPXMLRESULT" />
-  <id value="FilemakerXMLExport" />
+  <url value="http://hl7.org/fhir/StructureDefinition/FMPXMLRESULT" />
+  <id value="FMPXMLRESULT" />
   <name value="FMPXMLRESULT" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
