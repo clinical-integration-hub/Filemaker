@@ -75,7 +75,6 @@
         <code value="string" />
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
-      <fixedString value="The family name." />
     </element>
     <element id="FM_Untersuchungen.case.iDAT.vorname">
       <path value="FM_Untersuchungen.case.iDAT.vorname" />
