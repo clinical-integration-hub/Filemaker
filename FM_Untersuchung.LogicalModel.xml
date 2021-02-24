@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/StructureDefinition/FM_Untersuchungen" />
+  <version value="1.0.0" />
+  <name value="FM_Untersuchungen" />
+  <title value="FM_Untersuchungen" />
+  <status value="active" />
+  <description value="A FileMaker Molpatho Observation for the Filemkaker-CDS interface." />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="http://hl7.org/fhir/StructureDefinition/FM_Untersuchungen" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="FM_Untersuchungen">
+      <path value="FM_Untersuchungen" />
+      <short value="A Filemaker Observation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.SOP_ID">
+      <path value="FM_Untersuchungen.SOP_ID" />
+      <short value="A SOP_ID for the Filemaker Observation." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Transaction_ID_FM">
+      <path value="FM_Untersuchungen.Transaction_ID_FM" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case">
+      <path value="FM_Untersuchungen.Case" />
+      <short value="A Filemaker Case." />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.PathoPro_ID">
+      <path value="FM_Untersuchungen.Case.PathoPro_ID" />
+      <short value="A Filemaker PathoPro_ID." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.IDAT">
+      <path value="FM_Untersuchungen.Case.IDAT" />
+      <short value="The Patient data." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.IDAT.Nachname">
+      <path value="FM_Untersuchungen.Case.IDAT.Nachname" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+      <fixedString value="The family name." />
+    </element>
+    <element id="FM_Untersuchungen.Case.IDAT.Vorname">
+      <path value="FM_Untersuchungen.Case.IDAT.Vorname" />
+      <short value="The given name." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.IDAT.Geburtsdatum">
+      <path value="FM_Untersuchungen.Case.IDAT.Geburtsdatum" />
+      <short value="The birthdate." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.IDAT.Geschlecht">
+      <path value="FM_Untersuchungen.Case.IDAT.Geschlecht" />
+      <short value="The gender." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung">
+      <path value="FM_Untersuchungen.Case.Untersuchung" />
+      <short value="A Observation." />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Untersuchungs_ID">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Untersuchungs_ID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Name">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Name" />
+      <short value="Observation name." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Startdatum">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Startdatum" />
+      <short value="The start date" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis" />
+      <short value="A Observatino result." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Endedatum">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Endedatum" />
+      <short value="Result enddate." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Ergebnis_Text">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Ergebnis_Text" />
+      <short value="Result text." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Ergebnis_Flag">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Ergebnis_Flag" />
+      <short value="A result flag." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <minValueInteger value="-1" />
+      <maxValueInteger value="1" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH" />
+      <short value="ALK FISH result." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.SOP_ID">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.SOP_ID" />
+      <short value="ALK_FISH SOP ID." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Ergebnis_Flag">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Ergebnis_Flag" />
+      <short value="Result flag for ALK_FISH result." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <minValueInteger value="-1" />
+      <maxValueInteger value="1" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Positive_Tumorzellen">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Positive_Tumorzellen" />
+      <short value="Positiv tumor cells." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="decimal" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/decimal" />
+      </type>
+      <minValueDecimal value="0" />
+      <maxValueDecimal value="100" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Polysomie">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Polysomie" />
+      <short value="ALK_FISH polysomie." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="decimal" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/decimal" />
+      </type>
+      <minValueDecimal value="0" />
+      <maxValueDecimal value="100" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Gezaehlte_Tumorzellen">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Gezaehlte_Tumorzellen" />
+      <short value="Count of the tumor cells." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Break_Appart">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Break_Appart" />
+      <short value="Break appart." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="decimal" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/decimal" />
+      </type>
+      <minValueDecimal value="0" />
+      <maxValueDecimal value="100" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Extra_Rot">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Extra_Rot" />
+      <short value="ALK_FISH extra rot." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="decimal" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/decimal" />
+      </type>
+      <minValueDecimal value="0" />
+      <maxValueDecimal value="100" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.nicht_EML4">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.nicht_EML4" />
+      <short value="ALK_FISH nicht EML4." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <minValueInteger value="-1" />
+      <maxValueInteger value="1" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Kommentar">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.Kommentar" />
+      <short value="A comment." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.IHC">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ALK_FISH.IHC" />
+      <short value="IHC" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH" />
+      <short value="A ROS1_FISH result." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.SOP_ID">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.SOP_ID" />
+      <short value="ROS1_FISH SOP_ID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Ergebnis_Flag">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Ergebnis_Flag" />
+      <short value="ROS1_FISH result flag." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <minValueInteger value="-1" />
+      <maxValueInteger value="1" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Positive_Tumorzellen">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Positive_Tumorzellen" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Polysomie">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Polysomie" />
+      <short value="ROS1_FISH polysomie" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Gezaehlte_Tumorzellen">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Gezaehlte_Tumorzellen" />
+      <short value="Count of tumor cells." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Break_Appart">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Break_Appart" />
+      <short value="ROS1_FISH break appart" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Extra_Gruen">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Extra_Gruen" />
+      <short value="ROS1_FISH extra grün." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Kommentar">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.Kommentar" />
+      <short value="ROS1_FISH comment" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.IHC">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.ROS1_FISH.IHC" />
+      <short value="A IHC result." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.MET_FISH">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.MET_FISH" />
+      <short value="MET_FISH result" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.MET_FISH.SOP_ID">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.MET_FISH.SOP_ID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.MET_FISH.Ergebnis_Flag">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.MET_FISH.Ergebnis_Flag" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <minValueInteger value="-1" />
+      <maxValueInteger value="1" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.RET_FISH">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.RET_FISH" />
+      <short value="A RET_FISH result" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.RET_FISH.SOP_ID">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.RET_FISH.SOP_ID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.RET_FISH.Ergebnis_Flag">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.RET_FISH.Ergebnis_Flag" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <minValueInteger value="-1" />
+      <maxValueInteger value="1" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.NGS">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.NGS" />
+      <short value="A NGS result" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.NGS.SOP_ID">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.NGS.SOP_ID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.NGS.Ergebnis_Flag">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.NGS.Ergebnis_Flag" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <minValueInteger value="-1" />
+      <maxValueInteger value="1" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.FastTrack">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.FastTrack" />
+      <short value="A Fasttrack result." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.FastTrack.SOP_ID">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.FastTrack.SOP_ID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.FastTrack.Ergebnis_Flag">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.FastTrack.Ergebnis_Flag" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <minValueInteger value="-1" />
+      <maxValueInteger value="1" />
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Archer">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Archer" />
+      <short value="A Archer result." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Archer.SOP_ID">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Archer.SOP_ID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Archer.Ergebnis_Flag">
+      <path value="FM_Untersuchungen.Case.Untersuchung.Ergebnis.Archer.Ergebnis_Flag" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+      <minValueInteger value="-1" />
+      <maxValueInteger value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
